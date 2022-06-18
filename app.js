@@ -33,10 +33,23 @@ $(function() {
         let elementId = $(this).data('scroll');
         let elementOffset = $(elementId).offset().top;
 
+        nav.removeClass("show");
+
         $("html, body").animate ({
-            scrollTop: elementOffset -57
-        }, 600);
+            scrollTop: elementOffset - 30
+        }, 700);
 
     });
 
+
+    /*nav Toggle*/
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
+
+    navToggle.on("click", function(event) {
+        event.preventDefault();
+
+        nav.toggleClass("show");
+
+    })
 });

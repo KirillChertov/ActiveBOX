@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>ActiveBOX</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -45,7 +48,7 @@
                 <img src="assets/img/logo.png">
             </div>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a class="nav__link" href="#" data-scroll="#features">Features</a>
                 <a class="nav__link" href="#" data-scroll="#work">Work</a>
                 <a class="nav__link" href="#" data-scroll="#team">Our team</a>
@@ -53,7 +56,7 @@
                 <a class="nav__link" href="#" data-scroll="#download">Download</a>
             </nav>
 
-            <button class="burger" type="button">
+            <button class="burger" type="button" id="navToggle">
                 <span class="burger__item">menu</span>
             </button>
         </div><!--/header__inner-->
@@ -322,13 +325,15 @@
 <div class="reviews" id="reviews">
     <div class="container">
 
-        <div class="reviews__item">
-            <div class="reviews__photo">
-                <img class="reviews__img" src="assets/img/reviews/woman.jpg">
-            </div>
-            <div class="reviews__content">
-                <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
-                <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+        <div id="reviewsSlider">
+            <div class="reviews__item">
+                <div class="reviews__photo">
+                    <img class="reviews__img" src="assets/img/reviews/woman.jpg">
+                </div>
+                <div class="reviews__content">
+                    <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                    <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                </div>
             </div>
         </div>
 
@@ -364,6 +369,7 @@
                 <h3 class="footer__title">Location</h3>
                 <div class="footer__text">
                     <p>3481 Mersedes Place Beverly Hills, CA 90210</p>
+
                 </div>
             </div>
 
@@ -410,6 +416,8 @@
 </footer>
 
     <!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="app.js"></script>
 
 </body>

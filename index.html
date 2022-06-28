@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--для мобилок и др.-->
+    <!-- мета теги -->
+    <meta name="description" content="описание страницы">
+    <meta name="keywords" content="создание сайтов, веб-разработка, верстка сайтов и т.д...">
+
+    <!--https://yandex.ru/support/webmaster/controlling-robot/meta-robots.html
+    для яндекса -->
+
+    <!--https://developers.google.com/search/docs/advanced/crawling/special-tags?hl=ru
+    для гугла -->
+
+    <!-- Иконка для сайта
+    Favicon: https://realfavicongenerator.net/ (web)-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#2133a4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"><!--шрифты-->
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/><!--подключаем слайдер (библиотека skick js)-->
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- подключаем css файл со стилями-->
 
     <title>ActiveBOX</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- подключаем jquery -->
 </head>
 <body>
 
 
-<!-----------------Sprite-------------------->
+<!-- Sprite -->
 <svg style="display: none">
 
     <symbol id="facebook" viewBox="0 0 320 512">
@@ -37,15 +56,15 @@
     </symbol>
 
 </svg>
+<!-- /sprite -->
 
-
-<!---------------===header===-------------------->
+<!-- header -->
 <header class="header" id="header">
     <div class="container">
 
         <div class="header__inner">
             <div class="header__logo">
-                <img src="assets/img/logo.png">
+                <img src="assets/img/logo.png" alt="">
             </div>
 
             <nav class="nav" id="nav">
@@ -63,10 +82,10 @@
 
     </div> <!--/container-->
 </header>
+<!--/header-->
 
 
-
-<!--==----------------intro==------------------->
+<!-- intro -->
 <div class="intro" id="intro">
     <div class="container">
 
@@ -78,10 +97,10 @@
         <a class="btn btn--red" href="#">Find out more</a>
 
     </div>
-</div> <!--/intro-->
+</div>
+<!--/intro-->
 
-
-<!--===================Featurse==========================-->
+<!-- Featurse -->
 <div class="container" id="features">
 
     <div class="features">
@@ -126,13 +145,13 @@
             <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
             </div>
         </div>
-    </div> <!--/Features-->
+    </div><!--/Features-->
 
-</div> <!--/container-->
+</div>
+<!--/features-->
 
 
-
-<!-----------------Works---------------------->
+<!--Works-->
 <div class="works" id="work">
 
     <div class="works__item">
@@ -199,10 +218,10 @@
         </div>
     </div>
 
-</div> <!--/Works-->
+</div>
+<!--/Works-->
 
-
-<!--============TEAM===============-->
+<!-- TEAM -->
 <div class="team" id="team">
     <div class="container">
         <div class="team__inner">
@@ -317,32 +336,47 @@
 
         </div> <!--/team__inner-->
     </div> <!--/Container-->
-</div> <!--/team-->
+</div>
+<!--/team-->
 
 
-
-<!-------------Testimonials----------------->
+<!-- Reviews -->
 <div class="reviews" id="reviews">
     <div class="container">
 
-        <div id="reviewsSlider">
-            <div class="reviews__item">
-                <div class="reviews__photo">
-                    <img class="reviews__img" src="assets/img/reviews/woman.jpg">
-                </div>
-                <div class="reviews__content">
-                    <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
-                    <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+        <div class="reviews__slider" id="reviewsSlider"><!--id slider-->
+            <div> <!--for slick-->
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="assets/img/reviews/woman.jpg" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                        <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div> <!--for slick-->
+                <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="assets/img/reviews/woman.jpg" alt="">
+                    </div>
+                    <div class="reviews__content">
+                        <div class="reviews__text">“hi hi hi a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...text such ssttt ttttt ttttt”</div>
+                        <div class="reviews__author">Kirill, Web Developer at XYu</div>
+                    </div>
+                </div>
+            </div>
+        </div><!--id /slider-->
 
     </div> <!--/Conteiner-->
-</div> <!--/reviews-->
+</div>
+<!--/reviews-->
 
 
 
-<!---------------Download----------------->
+<!-- Download -->
 <div class="info" id="download">
     <div class="container">
 
@@ -356,11 +390,11 @@
         <a class="btn btn--red btn--long" href="#">Download here</a>
 
     </div> <!--/container-->
-</div> <!--/info-->
+</div>
+<!-- /download -->
 
 
-
-<!---------------------Footer--------------------->
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
 
@@ -414,11 +448,13 @@
     </div>
 
 </footer>
+<!--/Footer-->
 
-    <!--JavaScript-->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script src="app.js"></script>
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!--подключаем библиотеку slick js-->
+
+<script src="app.js"></script><!-- подключение файла js-->
 
 </body>
 </html>

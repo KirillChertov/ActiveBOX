@@ -23,8 +23,9 @@ p {
     margin: 0 0 10px;
 }
 
-/*-------------Container------*/
 
+/*Container
+----------*/
 .container {
     width: 100%;
     max-width: 1200px;
@@ -34,8 +35,9 @@ p {
 
 }
 
-/*-----------Header------*/
 
+/*Header
+---------------*/
 .header {
     width: 100%;
     height: 100px;
@@ -69,8 +71,9 @@ p {
     border-bottom: 1px solid #505369;
 }
 
-/*----------nav-----------*/
 
+/*nav
+-----------*/
 .nav {
     display: flex;
 
@@ -97,8 +100,9 @@ p {
     opacity: 1;
 }
 
-/*--------intro---------*/
 
+/*intro
+---------*/
 .intro {
     display: flex;
     justify-content: center;
@@ -141,8 +145,9 @@ p {
     color: #fff;
 }
 
-/*-----------buttom---------*/
 
+/*buttom
+---------*/
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -170,8 +175,10 @@ p {
 .btn--long {
     min-width: 280px;
 }
-/*-----------features---------*/
 
+
+/*features
+--------*/
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -203,8 +210,9 @@ p {
     line-height: 1.5;
 }
 
-/*--------=====Works====------*/
 
+/*Works
+---====------*/
 .works {
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +276,8 @@ p {
     color: #fff;
 }
 
-/*---------------team--------*/
+/* team
+------------*/
 
 .team {
     margin: 100px 0 100px;
@@ -318,8 +327,9 @@ p {
     color: #6c7279;
 }
 
-/*--------------Social-------*/
 
+/* Social
+-------------*/
 .social {
     display: flex;
 }
@@ -373,16 +383,68 @@ p {
     background-color: #fff;
 }
 
-/*------------ Reviews  -------*/
 
+/*slider
+------------*/
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+    padding: 0 0 20px;
+    list-style: none;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+
+
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+
+    cursor: pointer;
+    opacity: 0.4;
+    font-size: 0;
+    color: transparent;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
+}
+
+
+/* reviews
+--------------*/
 .reviews {
     overflow: hidden;
     background-color: #53354a;
 }
 
+.reviews__slider {
+    height: 500px;
+    overflow: hidden;
+}
+
+.reviews__slider.slick-initialized {
+    height: auto;
+}/* чтобы картинка не перекрывала контент (для мобилок)*/
+
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .reviews__photo {
@@ -463,8 +525,9 @@ p {
     text-transform: uppercase;
 }
 
-/*-------footer--------*/
 
+/*footer
+----------*/
 .footer {
     background-color: #3a3e64;
 }
@@ -506,7 +569,9 @@ p {
     padding: 0 20px;
 }
 
-/*------Copyright-------*/
+
+/*Copyright
+-------*/
 .copyright {
     background-color: #313454;
     padding: 20px 0px;
@@ -522,8 +587,9 @@ p {
     color: #fff;
 }
 
-/*----Burger-------*/
 
+/*Burger
+-----------*/
 .burger {
     display: none;
 }
@@ -561,7 +627,8 @@ p {
 }
 
 
-/*-------Media----------*/
+/*Media
+----------*/
 @media (max-width: 1300px) {
 
     /*Works*/
